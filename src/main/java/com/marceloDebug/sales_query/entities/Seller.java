@@ -71,7 +71,6 @@ public class Seller {
         Seller seller = (Seller) o;
         return Objects.equals(id, seller.id);
     }
-
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
