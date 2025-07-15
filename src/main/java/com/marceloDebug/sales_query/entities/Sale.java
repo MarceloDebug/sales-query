@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 @Entity
-@Table(name = "tb_sale")
+@Table(name = "tb_sales")
 public class Sale {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,7 +17,7 @@ public class Sale {
     private LocalDate date;
 
     @ManyToOne
-    @JoinColumn(name = "id_seller")
+    @JoinColumn(name = "seller_id")
     private Seller seller;
 
     public Sale(){}
